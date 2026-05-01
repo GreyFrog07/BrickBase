@@ -6,7 +6,8 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 
 const headlineLine1 = 'Builder floors?'.split(' ');
-const headlineLine2 = 'BrickBase.'.split(' ');
+const headlineLine2 = '0 Brokerage?'.split(' ');
+const headlineLine3 = 'BrickBase.'.split(' ');
 
 const wordVariant = {
   hidden: { y: '110%', opacity: 0 },
@@ -80,11 +81,25 @@ export function Hero() {
             </motion.span>
           </span>
           <span className="block overflow-hidden">
-            <motion.span initial="hidden" animate="show" className="inline-block italic text-accent-deep">
+            <motion.span initial="hidden" animate="show" className="inline-block">
               {headlineLine2.map((word, i) => (
                 <motion.span
                   key={`l2-${i}`}
                   custom={i + headlineLine1.length}
+                  variants={wordVariant}
+                  className="mr-[0.25em] inline-block"
+                >
+                  {word}
+                </motion.span>
+              ))}
+            </motion.span>
+          </span>
+          <span className="block overflow-hidden">
+            <motion.span initial="hidden" animate="show" className="inline-block italic text-accent-deep">
+              {headlineLine3.map((word, i) => (
+                <motion.span
+                  key={`l3-${i}`}
+                  custom={i + headlineLine1.length + headlineLine2.length}
                   variants={wordVariant}
                   className="mr-[0.25em] inline-block"
                 >
