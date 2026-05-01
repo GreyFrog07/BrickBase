@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-serif: 'Fraunces', Georgia, serif;
+}
+
+html, body {
+  background: #FBF7F0;
+  color: #0B2545;
+  -webkit-font-smoothing: antialiased;
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-ink px-7 py-3.5 text-sm font-medium tracking-wide text-sand transition-all hover:bg-ink-soft active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-ink/15 bg-transparent px-7 py-3.5 text-sm font-medium tracking-wide text-ink transition-all hover:bg-ink/5 active:scale-[0.98];
+  }
+  .input {
+    @apply w-full rounded-2xl border border-line bg-white px-5 py-4 text-base text-ink placeholder:text-ink/40 focus:border-accent focus:outline-none focus:ring-4 focus:ring-accent/15 transition;
+  }
+  .label {
+    @apply block text-xs font-medium uppercase tracking-[0.18em] text-ink/60 mb-2;
+  }
+}
