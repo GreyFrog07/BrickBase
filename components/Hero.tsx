@@ -6,7 +6,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 
 const headlineLine1 = 'Builder floors?'.split(' ');
-const headlineLine2 = '0 Brokerage?'.split(' ');
+const headlineLine2 = '0% Brokerage?'.split(' ');
 const headlineLine3 = 'BrickBase.'.split(' ');
 
 const wordVariant = {
@@ -80,8 +80,8 @@ export function Hero() {
               ))}
             </motion.span>
           </span>
-          <span className="block overflow-hidden">
-            <motion.span initial="hidden" animate="show" className="inline-block">
+          <span className="block overflow-hidden pb-[0.12em]">
+            <motion.span initial="hidden" animate="show" className="inline-block text-accent">
               {headlineLine2.map((word, i) => (
                 <motion.span
                   key={`l2-${i}`}
