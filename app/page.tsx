@@ -9,15 +9,30 @@ import { FinalCTA } from '@/components/FinalCTA';
 
 export default function Home() {
   return (
-    <>
+    <div className="h-dvh overflow-y-scroll snap-y snap-mandatory">
       <Nav />
-      <Hero />
-      <Marquee />
-      <Pillars />
-      <VoiceFeature />
-      <HowItWorks />
-      <FinalCTA />
-      <Footer />
-    </>
+
+      <section className="snap-start min-h-dvh pt-[68px]">
+        <Hero />
+        <Marquee />
+      </section>
+
+      <section className="snap-start min-h-dvh flex flex-col justify-center">
+        <Pillars />
+      </section>
+
+      <section className="snap-start min-h-dvh flex flex-col justify-center">
+        <VoiceFeature />
+      </section>
+
+      <section className="snap-start min-h-dvh flex flex-col justify-center">
+        <HowItWorks />
+      </section>
+
+      <section className="snap-start min-h-dvh flex flex-col justify-center">
+        <FinalCTA />
+        <Footer />
+      </section>
+    </div>
   );
 }

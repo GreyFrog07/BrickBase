@@ -34,7 +34,7 @@ export function Hero() {
   return (
     <section
       ref={ref}
-      className="relative overflow-hidden bg-sand pt-32 pb-28 sm:pt-40 sm:pb-36"
+      className="relative overflow-hidden bg-sand pt-16 pb-28 sm:pt-20 sm:pb-36"
     >
       <motion.div
         aria-hidden
@@ -51,16 +51,6 @@ export function Hero() {
         style={{ y: contentY, opacity: contentOpacity }}
         className="relative mx-auto max-w-6xl px-5 sm:px-8"
       >
-        <motion.span
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-          className="mb-7 inline-flex items-center gap-2 rounded-full border border-ink/15 bg-white/60 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-ink/70 backdrop-blur"
-        >
-          <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-accent" />
-          Faridabad · Builder floors only
-        </motion.span>
-
         <h1 className="font-serif text-5xl font-semibold leading-[1.02] tracking-tight text-ink sm:text-7xl">
           <span className="block overflow-hidden">
             <motion.span
@@ -110,15 +100,23 @@ export function Hero() {
           </span>
         </h1>
 
-        <motion.p
+        <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.55, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-          className="mt-8 max-w-xl text-lg leading-relaxed text-ink/70 sm:text-xl"
+          className="mt-10 flex flex-wrap gap-x-10 gap-y-4"
         >
-          300+ buildings. 900+ floors. All of Faridabad's builder floors,
-          right in your phone. Scroll, shortlist, visit only what you love.
-        </motion.p>
+          {[
+            { stat: '300+', label: 'Buildings' },
+            { stat: '900+', label: 'Floors listed' },
+            { stat: '100%', label: 'Builder floor inventory' },
+          ].map(({ stat, label }) => (
+            <div key={label}>
+              <p className="font-serif text-4xl font-semibold text-ink sm:text-5xl">{stat}</p>
+              <p className="mt-1 text-sm font-medium uppercase tracking-widest text-ink/50">{label}</p>
+            </div>
+          ))}
+        </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 16 }}

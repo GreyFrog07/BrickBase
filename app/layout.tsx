@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import { SmoothScroll } from '@/components/SmoothScroll';
 
 export const metadata: Metadata = {
   title: 'BrickBase — Every builder floor in Faridabad',
@@ -29,7 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body className="font-sans antialiased">
-        <SmoothScroll>{children}</SmoothScroll>
+        {children}
       </body>
     </html>
   );
