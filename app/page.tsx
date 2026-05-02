@@ -1,6 +1,7 @@
 import { Nav } from '@/components/Nav';
 import { Footer } from '@/components/Footer';
 import { Hero } from '@/components/Hero';
+import { Pillars } from '@/components/Pillars';
 import { HowItWorks } from '@/components/HowItWorks';
 import { FinalCTA } from '@/components/FinalCTA';
 
@@ -11,6 +12,10 @@ export default function Home() {
 
       <section className="snap-start h-dvh flex flex-col justify-center">
         <Hero />
+      </section>
+
+      <section className="snap-start h-dvh flex flex-col justify-center">
+        <Pillars />
       </section>
 
       <section className="snap-start h-dvh flex flex-col justify-center">

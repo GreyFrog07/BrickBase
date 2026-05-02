@@ -155,7 +155,7 @@ export default function SignupPage() {
                   id="profession"
                   type="text"
                   autoComplete="organization-title"
-                  placeholder="e.g. Business owner, Engineer…"
+                  placeholder="helps us identify genuine members"
                   value={profession}
                   onChange={(e) => setProfession(e.target.value)}
                   className="input mt-1"

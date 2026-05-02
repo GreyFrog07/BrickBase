@@ -68,7 +68,7 @@ const cardVariants = {
 
 export function Pillars() {
   return (
-    <section className="bg-white py-24 sm:py-32">
+    <section className="bg-white py-12 sm:py-16">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -90,13 +90,13 @@ export function Pillars() {
             <br />
             One scroll away.
           </h2>
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink/65">
+          <p className="mt-4 max-w-xl leading-relaxed text-ink/65">
             Stop scrolling 99acres. Stop the broker calls. We have the city's
             entire builder-floor inventory — yours to browse on your terms.
           </p>
         </motion.div>
 
-        <div className="mt-20 grid gap-10 sm:grid-cols-3 sm:gap-8">
+        <div className="mt-10 grid gap-8 sm:grid-cols-3 sm:gap-8">
           {pillars.map(({ Icon, title, body }, i) => (
             <motion.div
               key={title}
@@ -107,13 +107,13 @@ export function Pillars() {
               variants={cardVariants}
               className="group"
             >
-              <div className="grid h-12 w-12 place-items-center rounded-xl bg-sand text-ink transition group-hover:bg-ink group-hover:text-sand">
-                <Icon className="h-5 w-5" strokeWidth={1.75} />
+              <div className="grid h-10 w-10 place-items-center rounded-xl bg-sand text-ink transition group-hover:bg-ink group-hover:text-sand">
+                <Icon className="h-4.5 w-4.5" strokeWidth={1.75} />
               </div>
-              <h3 className="mt-6 font-serif text-2xl font-semibold tracking-tight text-ink">
+              <h3 className="mt-4 font-serif text-xl font-semibold tracking-tight text-ink">
                 {title}
               </h3>
-              <p className="mt-3 leading-relaxed text-ink/65">{body}</p>
+              <p className="mt-2 leading-relaxed text-ink/65">{body}</p>
             </motion.div>
           ))}
         </div>
