@@ -1,10 +1,7 @@
 import { Nav } from '@/components/Nav';
 import { Footer } from '@/components/Footer';
 import { Hero } from '@/components/Hero';
-import { Marquee } from '@/components/Marquee';
-import { Pillars } from '@/components/Pillars';
 import { HowItWorks } from '@/components/HowItWorks';
-import { VoiceFeature } from '@/components/VoiceFeature';
 import { FinalCTA } from '@/components/FinalCTA';
 
 export default function Home() {
@@ -12,25 +9,18 @@ export default function Home() {
     <div className="h-dvh overflow-y-scroll snap-y snap-mandatory">
       <Nav />
 
-      <section className="snap-start min-h-dvh pt-[68px]">
+      <section className="snap-start h-dvh flex flex-col justify-center">
         <Hero />
-        <Marquee />
       </section>
 
-      <section className="snap-start min-h-dvh flex flex-col justify-center">
-        <Pillars />
-      </section>
-
-      <section className="snap-start min-h-dvh flex flex-col justify-center">
-        <VoiceFeature />
-      </section>
-
-      <section className="snap-start min-h-dvh flex flex-col justify-center">
+      <section className="snap-start h-dvh flex flex-col justify-center">
         <HowItWorks />
       </section>
 
-      <section className="snap-start min-h-dvh flex flex-col justify-center">
-        <FinalCTA />
+      <section className="snap-start h-dvh flex flex-col">
+        <div className="flex-1 flex flex-col justify-center">
+          <FinalCTA />
+        </div>
         <Footer />
       </section>
     </div>

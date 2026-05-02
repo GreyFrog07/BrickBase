@@ -6,7 +6,7 @@ import { MagneticButton } from './MagneticButton';
 
 export function FinalCTA() {
   return (
-    <section className="relative overflow-hidden bg-ink py-28 text-sand sm:py-36">
+    <section className="relative overflow-hidden bg-ink py-16 text-sand sm:py-20">
       <motion.div
         aria-hidden
         initial={{ opacity: 0 }}

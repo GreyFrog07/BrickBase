@@ -34,7 +34,7 @@ export function Hero() {
   return (
     <section
       ref={ref}
-      className="relative overflow-hidden bg-sand pt-16 pb-28 sm:pt-20 sm:pb-36"
+      className="relative overflow-hidden bg-sand pt-20 pb-16 sm:pt-24 sm:pb-20"
     >
       <motion.div
         aria-hidden

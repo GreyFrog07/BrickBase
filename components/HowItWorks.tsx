@@ -18,9 +18,9 @@ const steps = [
 
 export function HowItWorks() {
   return (
-    <section className="bg-sand-warm py-24 sm:py-32">
+    <section className="bg-sand-warm py-12 sm:py-16">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
-        <div className="grid gap-16 sm:grid-cols-2 sm:gap-24">
+        <div className="grid gap-10 sm:grid-cols-2 sm:gap-16">
           <div>
             <p className="label">How it works</p>
             <h2 className="mt-3 font-serif text-3xl font-semibold leading-tight text-ink sm:text-5xl">
@@ -31,7 +31,7 @@ export function HowItWorks() {
             </p>
           </div>
 
-          <ol className="space-y-10">
+          <ol className="space-y-6">
             {steps.map(({ n, title, body }) => (
               <li
                 key={n}
