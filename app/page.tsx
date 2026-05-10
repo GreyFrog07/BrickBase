@@ -1,6 +1,7 @@
 import { Nav } from '@/components/Nav';
 import { Footer } from '@/components/Footer';
 import { Hero } from '@/components/Hero';
+import { MapVideo } from '@/components/MapVideo';
 import { Pillars } from '@/components/Pillars';
 import { HowItWorks } from '@/components/HowItWorks';
 import { FinalCTA } from '@/components/FinalCTA';
@@ -12,6 +13,10 @@ export default function Home() {
 
       <section>
         <Hero />
+      </section>
+
+      <section>
+        <MapVideo />
       </section>
 
       <section>
