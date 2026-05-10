@@ -108,7 +108,7 @@ export function Hero() {
         >
           {[
             { stat: '300+', label: 'Buildings' },
-            { stat: '900+', label: 'Floors listed' },
+            { stat: '1000+', label: 'Floors listed' },
             { stat: '100%', label: 'Builder floor inventory' },
           ].map(({ stat, label }) => (
             <div key={label}>

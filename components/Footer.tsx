@@ -7,7 +7,7 @@ export function Footer() {
         <div className="flex flex-col items-start gap-4">
           <Logo />
           <p className="max-w-sm text-sm text-ink/60">
-            Every builder floor in Faridabad — 300+ buildings, 900+ floors, right in your phone.
+            Every builder floor in Faridabad — 300+ buildings, 1000+ floors, right in your phone.
           </p>
         </div>
         <p className="mt-10 text-xs text-ink/40">

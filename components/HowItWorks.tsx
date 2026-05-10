@@ -7,7 +7,7 @@ const steps = [
   {
     n: '02',
     title: 'Tell us what you want.',
-    body: 'Budget, location, BHK. We filter 900+ floors down to yours.',
+    body: 'Budget, location, BHK. We filter 1000+ floors down to yours.',
   },
   {
     n: '03',

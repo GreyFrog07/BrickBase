@@ -4,12 +4,12 @@ import './globals.css';
 export const metadata: Metadata = {
   title: 'BrickBase — Every builder floor in Faridabad',
   description:
-    "300+ buildings. 900+ floors. All of Faridabad's builder floors, right in your phone. Scroll, shortlist, visit only what you love.",
+    "300+ buildings. 1000+ floors. All of Faridabad's builder floors, right in your phone. Scroll, shortlist, visit only what you love.",
   metadataBase: new URL('https://brickbase.co.in'),
   openGraph: {
     title: 'BrickBase — Every builder floor in Faridabad',
     description:
-      "300+ buildings. 900+ floors. Scroll, shortlist, visit only what you love.",
+      "300+ buildings. 1000+ floors. Scroll, shortlist, visit only what you love.",
     url: 'https://brickbase.co.in',
     siteName: 'BrickBase',
     type: 'website',

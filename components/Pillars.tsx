@@ -43,7 +43,7 @@ const pillars = [
   {
     Icon: Building2,
     title: 'Every floor in Faridabad.',
-    body: '300+ buildings, 900+ builder floors. If it is a builder floor in Faridabad, it is on BrickBase.',
+    body: '300+ buildings, 1000+ builder floors. If it is a builder floor in Faridabad, it is on BrickBase.',
   },
   {
     Icon: ShieldCheck,
@@ -84,7 +84,7 @@ export function Pillars() {
             </span>{' '}
             buildings.{' '}
             <span className="text-accent-deep">
-              <CountUp to={900} />
+              <CountUp to={1000} />
             </span>{' '}
             floors.
             <br />

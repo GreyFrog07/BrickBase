@@ -44,7 +44,7 @@ export function FinalCTA() {
           transition={{ duration: 0.9, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
           className="mx-auto mt-6 max-w-lg text-lg leading-relaxed text-sand/70"
         >
-          300+ buildings. 900+ floors. One scroll away.
+          300+ buildings. 1000+ floors. One scroll away.
         </motion.p>
 
         <motion.div

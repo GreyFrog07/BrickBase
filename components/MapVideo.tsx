@@ -56,7 +56,7 @@ export function MapVideo() {
             <span className="text-accent-deep">pin by pin.</span>
           </h2>
           <p className="mx-auto mt-4 max-w-md leading-relaxed text-ink/65">
-            See every builder floor cluster visually. Tap a pin to peek inside.
+            Every builder floor project in existence in one place.
           </p>
         </div>
 
